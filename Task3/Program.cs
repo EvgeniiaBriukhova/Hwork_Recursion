@@ -3,11 +3,11 @@
 
 void PrintArrayReversed(int[] array, int i)
 {
-    if( i >= 0)
-    {
-        Console.Write(array[i] + " ");
-        PrintArrayReversed(array, i - 1);
-    }
+    if( i < 0)
+    return;
+    Console.Write(array[i] + " ");
+    PrintArrayReversed(array, i - 1);
+
 }
 
 
